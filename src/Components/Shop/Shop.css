@@ -1,0 +1,141 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px;
+    margin: auto;
+    margin-top: 100px;
+}
+.card-container{
+    background: rgba(255, 153, 0, 0.3);
+    height: 944px;
+    padding: 23px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.title{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+}
+.order-details{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.005em;
+}
+.total{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+}
+.btn-clear{
+    height: 48px;
+    background: #FF3030;
+    border-radius: 4px;
+    border: none;
+    width: 80%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    margin-top: 57px;
+}
+.trash-icon{
+    margin-left: 5px;
+}
+.btn-order{
+    height: 48px;
+    background: #FF9900;
+    ;
+    border-radius: 4px;
+    border: none;
+    width: 80%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: white;
+    margin-top: 16px;
+}
+.arrow-icon{
+    margin-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .shop-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10%;
+    }
+    
+}
+@media only screen and (min-width: 601px) and (max-width: 767px){
+    .shop-container{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5%;
+    }
+    
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .shop-container{
+        display: grid;
+        grid-template-columns: 2fr;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5%;
+    }
+    
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .shop-container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .card-container{
+        width: 100%;
+        margin-left: 10%;
+    }   
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5%;
+    } 
+}
+@media only screen and (min-width: 1200px){
+    .shop-container{
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    .card-container{
+        width: 100%;
+        margin-left: 10%;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 5%;
+    }
+}
